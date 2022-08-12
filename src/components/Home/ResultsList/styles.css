@@ -1,0 +1,26 @@
+.resultList-container {
+  margin: 0 auto 3.5rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.resultList-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.zit{
+  transition: transform ease-in-out 0.3s;
+}
+.zit:hover{
+  transform: scale(1.2); 
+  z-index: 999;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 576px) {
+  .resultList-container {
+    grid-template-columns: 1fr;
+  }
+}
